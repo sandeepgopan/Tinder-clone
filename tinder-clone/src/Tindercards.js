@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TinderCard from "react-tinder-card";
+import
 import "./Tindercard.css";
 
 function Tindercards() {
@@ -11,9 +12,8 @@ function Tindercards() {
         {
             name: 'Mark',
             url:"https://static01.nyt.com/images/2015/03/23/business/jobsbook1/jobsbook1-superJumbo.jpg?quality=90&auto=webp"
-        }
+        },
     ]);
-
     return (
         <div>
             <h1>Cards</h1>
