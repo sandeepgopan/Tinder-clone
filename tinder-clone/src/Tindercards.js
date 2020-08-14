@@ -1,5 +1,6 @@
 import React from 'react'
 import TinderCard from "react-tinder-card";
+import "./Tindercard.css";
 
 function Tindercards() {
     const [people, setPeople] = React.useState ([
@@ -16,6 +17,7 @@ function Tindercards() {
     return (
         <div>
             <h1>Cards</h1>
+            <div className="tinderCards_cardContainer">
             {people.map((person)=>(
                 <TinderCard
                 className='swipe'
@@ -29,6 +31,8 @@ function Tindercards() {
                     </div>
                 </TinderCard>
             ))} 
+            </div>
+            
         </div>
     )
 }
